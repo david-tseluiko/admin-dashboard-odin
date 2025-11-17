@@ -5,12 +5,19 @@ body {
 
     padding: 0;
     margin: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 .header {
     margin: 0;
     padding: 15px 30px;
     box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.41);
+
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
 }
 
 .header-top {
@@ -112,4 +119,10 @@ body {
     color: white;
     font-size: 18px;
     cursor: pointer;
+}
+
+.sidebar {
+    background-color: #1992d4;
+
+    grid-row: 1 / -1;
 }
