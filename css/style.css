@@ -191,10 +191,52 @@ a {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1.5fr 1fr;
+    gap: 30px;
+
+    padding: 0 30px;
+    margin-top: 10px;
 }
 
 .main-left {
     grid-row: 1 / -1;
+}
+
+.main > * > h2:first-child {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-left-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.main-left-grid > .card {
+    background-color: #fff;
+    border-radius: 10px;
+    border-left: 10px solid #f0b429;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.main-left-grid > .card > .card-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.main-left-grid > .card > .card-description {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.main-left-grid > .card > .card-icons {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
 }
 
 .main-left svg {
