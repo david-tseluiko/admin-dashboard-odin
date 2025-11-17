@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
     font-family: "Roboto", sans-serif;
@@ -14,7 +14,7 @@ body {
 .header {
     margin: 0;
     padding: 15px 30px;
-    box-shadow: 0px 2px 14px 1px rgba(0,0,0,0.41);
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.41);
 
     grid-column: 2 / -1;
     grid-row: 1 / 2;
