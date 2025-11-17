@@ -247,3 +247,31 @@ a {
 .main-right-bottom {
     grid-column: 2;
 }
+
+.main-right-top-cards {
+    background-color: #fff;
+    display: grid;
+    gap: 10px;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.main-right-top-cards > .card > .card-title {
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.main-right-top-cards > .card > .card-description {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.main-right-top-cards > .card:not(:last-child)::after {
+    content: "";
+    display: block;
+    border: 1px solid #cfcfcf;
+    margin-top: 10px;
+}
