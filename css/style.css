@@ -18,7 +18,7 @@ body {
 .header {
     margin: 0;
     padding: 15px 30px;
-    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.41);
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.1);
 
     grid-column: 2 / -1;
     grid-row: 1 / 2;
@@ -190,7 +190,7 @@ a {
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    grid-template-rows: repeat(2, auto);
     gap: 30px;
 
     padding: 0 30px;
@@ -219,6 +219,7 @@ a {
     border-left: 10px solid #f0b429;
     margin: 0;
     padding: 30px 20px;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.1);
 }
 
 .main-left-grid > .card > .card-title {
@@ -248,12 +249,13 @@ a {
     grid-column: 2;
 }
 
-.main-right-top-cards {
+.main-right-top-cards{
     background-color: #fff;
     display: grid;
     gap: 10px;
     padding: 30px 20px;
     border-radius: 10px;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.1);
 
     position: relative;
 }
@@ -275,3 +277,45 @@ a {
     border: 1px solid #cfcfcf;
     margin-top: 10px;
 }
+
+.main-right-bottom-cards {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 14px 1px rgba(0, 0, 0, 0.1);
+}
+
+.main-right-bottom-cards > .card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+.main-right-bottom-cards > .card:last-child {
+    margin: 0;
+}
+
+.main-right-bottom-cards > .card .card-user-name,
+.main-right-bottom-cards > .card .card-title  {
+    margin: 0;
+}
+
+.main-right-bottom-cards > .card .card-user-name {
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.main-right-bottom-cards > .card .card-title {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.main-right-bottom-cards > .card > .group {
+   display: flex;
+   gap: 5px;
+   flex-direction: column;
+   justify-content: center;
+}
+
